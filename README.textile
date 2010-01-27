@@ -1,0 +1,13 @@
+h1. Calculators are easy...
+
+For those of us who are old enough to remember, there was a time _before_ computers when people who were interested in doing math problems (and who isn't?) used to have to carry around an ingenious device known as a "slide rule":http://en.wikipedia.org/wiki/Slide_rule, a manual, pocket-sized, analog computational aide that was eventually replaced by the "digital calculator":http://en.wikipedia.org/wiki/Calculator, thereby setting computational mathematics backwards several hundred years by making it virtually impossible to represent rational numbers. Nowadays, these "calculators" are extremely cheap, astoundingly abundant, and function as little baby brothers to the "massively super-computing":http://en.wikipedia.org/wiki/Super-computer, "number crunching":http://en.wikipedia.org/wiki/Flops, "vector-mesh rendering":http://en.wikipedia.org/wiki/Rendering_%28computer_graphics%29 monsters we tote around with us in order to make "websites about puppies":http://www.dailypuppy.com/. Which is why my app handles floats so poorly and makes me cry when trying to add money values together.
+
+Thus, while every calculator does not necessarily service as a computer (try running Linux on that CASIO, I dare ya), every computer out there does rather nice service as a calculator. Practically _any_ "How to Program in X" book worth its salt has a "How to use X for a calculator (you lazy slob, where is your calculator?)" tutorial. So we're going to make us a calculator.
+
+h2. The Rules
+
+* The calculator should be able to perform at least the four basic arithmetic operations: add, subtract, multiply, and divide. 
+* It should operate as expected when two numbers are provided to it, i.e. adding 1 and 1 should equal 2.
+* Our tests for the calculator should include some variation on the number and type of arguments, i.e. test 1 + 1 = 2; 1 + 2 + 3 = 6; 1.5 - 0.25 + 2 * 3 = 7.25; etc.
+
+That's about it. If we get done early, we can always implement additional features, like stored registers (the ambiguous "M+" button) and reverse polish notation (stack-like implementation). For now, though, let's keep it simple. It's just a calculator, after all... How hard could it be? ;)
