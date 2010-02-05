@@ -1,0 +1,8 @@
+h1. Coding Dojo Retrospective
+
+* Everyone actually got to pilot _and_ co-pilot this time! 
+* Technically, we shouldn't rag the pair so much while they're coding.
+* We should probably get to a standard EDITOR.
+* Practical applications? What about the "Google TDD Problems":http://sites.google.com/site/tddproblems/all-problems-1
+* Let's get food next time!
+* Need a mouse, too...
