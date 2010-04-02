@@ -1,21 +1,31 @@
 <?php
 
+/**
+ * The PHPUnit Framework is required to run unit tests with PHPUnit.
+ * The file "PHPUnit/Framework.php" has all the other includes that
+ * we need, so we can just require that file. However, we have to
+ * require_once() so we don't accidentally load it twice.
+ */
 require_once 'PHPUnit/Framework.php';
 
+
+/**
+ * Require the class we want to test: Calculator
+ */
 require_once 'Calculator.php';
 
 class CalculatorTest
 extends PHPUnit_Framework_TestCase
 {
 
-    public function setUp(){
+    public function setUp ( )
+    {
         $this->Calc = new Calculator;
-    }
+    } // END setUp
+
 
     public function test_add ( )
     {
-        
-
         $this->assertEquals(2, $this->Calc->add(1,1),
             'The $this->Calc should be able to add 1 + 1'
         );
@@ -36,7 +46,6 @@ extends PHPUnit_Framework_TestCase
 
     public function test_subtract ( )
     {
-
         $this->assertEquals(1, $this->Calc->sub(2,1),
             'The $this->Calc should be able to subtract 2 - 1'
         );
@@ -52,20 +61,21 @@ extends PHPUnit_Framework_TestCase
 
     } // END test_subtract
 
-    public function test_multiply(){
-    
+
+    public function test_multiply ( )
+    {
         $result = $this->Calc->multiply(10, 10);
+
         $this->assertEquals(100, $result,
             "10 x 10 should be 100 but it's $result"
         );  
-      $result = $this->Calc->multiply(10, 11);       
-     $this->assertEquals(110, $result,
-          "10 X 11 should be 110 but it's $result"
-          );
-          
-          
- 
-    }
+
+        $result = $this->Calc->multiply(10, 11);       
+
+        $this->assertEquals(110, $result,
+            "10 X 11 should be 110 but it's $result"
+        );
+    } // END test_multiply
 
     public function test_division(){
 
